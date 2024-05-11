@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: .2s;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'myFamily';
+  src: url('./assets//fonts/NexaRustSlab-BlackShadow01.otf');
+}
+
+.remove {
+  position: absolute; 
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#numbers {
+  font-family: myFamily;
+}
