@@ -15,7 +15,7 @@ const Home = () => {
   }
 
   return (
-    <div className="w-full h-[90vh] bg-white dark:bg-slate-900">
+    <div className="w-full h-[80vh] bg-white dark:bg-slate-900">
 
       <main className="w-full h-full flex justify-center items-center">
         <h1 id="numbers" className="text-2xl font-bold dark:text-white mt-[-8rem]">{sayNumber.length === 0 ? 'Raqam Yozing' : (

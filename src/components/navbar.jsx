@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from 'react-router-dom'
+import { assetImages } from '../constants/index'
 import { IoMoon, IoSunnySharp, IoGrid   } from "react-icons/io5";
 
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="flex justify-between py-4 md:px-8 px-4 items-center dark:bg-slate-900 border-b-white">
-      <h1 className="text-3xl text-slate-900 font-bold flex dark:text-white">Ncy <p className="text-sm ml-1 text-blue-500">pr</p></h1>
+      <img src={assetImages.NcyImage} alt="ncy-img" className="w-[70px] h-[70px]" />
       <div>
         <button className="py-3 px-3 bg-slate-900 mr-2 rounded-md text-white dark:bg-white dark:text-slate-900 hover:opacity-80" onClick={toggleChange}><IoGrid /></button>
         <button className="py-3 px-3 bg-slate-900 rounded-md text-white dark:bg-white dark:text-slate-950 hover:opacity-80" onClick={toggleTheme}>{darkMode ? <IoMoon /> : <IoSunnySharp />}</button>
